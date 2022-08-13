@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+ .attribution a {
+      color: hsl(228, 45%, 44%);
+}
+
+body{
+    background-image: url('./images/pattern-background-desktop.svg');
+    font-family: "Red Hat Display";
+    background-color: var(--Pale-blue);
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap ;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+main{
+    /* border: 2px solid red; */
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+   /*this helps the container to resize itself to the size 
+   of image*/
+    width:min-content;
+} 
+
+.image{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    border-radius: 15px 15px 0 0;
+    /* if there are contents within the div/container that has the curved
+     corners, you have to set overflow: hidden because otherwise the child div's 
+    overflow can give the impression that the border-radius isn't 
+    working.*/
+    overflow: hidden;
+}
+
+.first{
+    font-weight: 900;
+    font-size: 25px;
+    padding-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.second{
+    text-align: center;
+    padding: 25px 50px 25px 50px;
+    color: hsl(224, 23%, 55%);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.third{
+     
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    /* align-content: space-between; */
+
+    
+} 
+.third .music{
+    padding-right: 25px;
+}
+.third span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+.third p{
+    color: hsl(224, 23%, 55%);
+}
+
+.third .lnk{
+    padding-left: 95px;
+}
+.third .lnk a:hover{
+    color: var(--Bright-blue);
+    text-decoration: none;
+    
+}
+.pay{
+    padding: 25px 0 35px 0;
+    
+}
+.pay a{
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--Bright-blue);
+    color: white;
+    padding: 10px 100px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 10px  hsl(245, 75%, 82%);
+    
+}
+.pay a:hover{
+    background-color: var(--Desaturated-blue);
+   
+}
+.cancel{
+
+    padding-bottom: 50px; 
+    
+}
+.cancel a{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);   
+}
+.cancel a:hover{
+    color: var(--Bright-blue);
+    font-weight: 700;
+}
+
+@media only screen and (max-width:748px) {
+    body{
+        /* background-color: rgb(0, 0, 0); */
+    }
+    
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap ;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* margin: 45px; */
+    
+}
+main{
+    /* border: 2px solid red; */
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+    width:322px;
+} 
+
+.image{
+    width:100%;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first{
+    font-weight: 900;
+    font-size: 25px;
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.second{
+    text-align: center;
+    padding: 25px 30px 25px 30px;
+    color: hsl(224, 23%, 55%);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.third{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    /* align-content: space-between; */
+
+    
+} 
+.third .music{
+    padding-right: 0px;
+}
+.third span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+.third p{
+    color: hsl(224, 23%, 55%);
+}
+
+.third .lnk{
+    padding-left: 0px;
+}
+.third .lnk a:hover{
+    color: var(--Bright-blue);
+    text-decoration: none;
+    
+}
+.pay{
+    padding: 25px 0 35px 0;
+    
+}
+.pay a{
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--Bright-blue);
+    color: white;
+    padding:10px 40px;
+ 
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 10px  hsl(245, 75%, 82%);
+    
+}
+.pay a:hover{
+    background-color: var(--Desaturated-blue);
+   
+}
+.cancel{
+
+    padding-bottom: 20px; 
+    
+}
+.cancel a{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);   
+}
+.cancel a:hover{
+    color: var(--Bright-blue);
+    font-weight: 700;
+}
+
+
+}
